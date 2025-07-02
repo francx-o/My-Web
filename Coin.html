@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Francis Osei</title>
+    <link rel="icon" href="atom (1).png" type="image/png">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        Francis Osei
+    </header>
+    <div class="profilepicture">
+        <div class="item">
+        <div class="caption">Can the outcome of a coin toss be predicted with certainty?<hr></div>
+        </div>
+    </div>
+    <div class="Essay">
+        <h3>
+            Introduction
+        </h3>
+        <p>
+            I read a paper - two papers actually first by diaconnis et Al and 
+            followed up with J. B. Keller. These papers debated on the probabilistic nature of the 
+            coin toss of which both argued against it.
+        </p>
+        <p>
+            Diaconnis group found out that, the toss of a coin isn't really 50/50 as we've been 
+            taught in school. They proved that, the probability is rather 49/51 and it's biased 
+            towards the side facing up. This was achieved with experiment.
+        </p>
+        <p>
+            In Keller's approach , which was a theoretical one and preceeded Diaconnis, he 
+            proved that, if you know the initial conditions of a coin toss, then, you can predict 
+            the out come of a coin toss.
+        </p>
+        <p>
+            I questioned how can you find this outcome of a toss? I had an answer which I'll 
+            share in no time.
+        </p>
+        <h3>
+            Outcome Of A Coin Toss
+        </h3>
+        <h4>
+            <em>We propose that, the outcome of a coin toss Γ, is given by cosθ. </em>
+        </h4>
+        <h5>
+            Proof
+        </h5>
+        <p>
+            We propose a kind of toss to use in this theoretical exploration. In our coin toss, 
+            the force applied to the coin is perpendicular to the coin and the coin takes off 
+            horizontally straight without deviation and follows the same path down at the 
+            same time, the same force causes it to rotate about the y given the orientation in 
+            figure 1.
+        </p>
+        <p>
+            We know already that, the coin has 3 areas. Two faces and one side. The heads 
+            and tail and the side of the coin. If the coin is tossed and we view from birds eye 
+            view, we see that, the coin's parts transitions through heads, tail and side.
+        </p>
+        <p>
+            Also, before the toss, the coin was having one side facing up and after the toss, 
+            will have a side facing up. 
+        </p>
+        <p>
+            This is akin to a cosine graph where we have 1, 0 and -1. And the curve transitions 
+            through these numbers till it stops and settles at any of the values depending on 
+            the x value.
+        </p>
+        <p>
+            In the case of the coin, we can let the sides be the values 1 or -1 and the side be 
+            zero. The reason being that, the sides are the outcome and zero has no outcome 
+            which corresponds to the side. 
+        </p>
+        <p>
+            For the rest of the values, cosine begins with 1 at zero - no activity this 
+            corresponds to the side that faces upwards if the coin is about to be tossed. And 
+            the other side, the -1. This means 1 can take any face but once a face has being 
+            assigned, the -1 takes the other face.
+        </p>
+        <h3>
+            Calculating the outcome
+        </h3>
+        <p>
+            Now we shift to using 1, 0 and -1 in our analysis with the assumption 1 is heads 
+            and -1 is tail.
+        </p>
+        <p>
+            If the coin is tossed, it transitions between these values till stopped and a final 
+            value is obtained. If it's 1, it's heads if 0 it landed on its side and if -1, it's tails. 
+        </p>
+        <p>
+            Now, we have for find a way to track the values. We have two ways. 
+            <ol>
+                <li>Track the distance of the coin from the ground and </li>
+                <li>Track the angular displacement of the coin</li>
+            </ol>
+        </p>
+        <p>
+            The best is to track the angular displacement of the coin because cosine takes 
+            angular values so we find the angular displacement of the coin.
+        </p>
+        <p>
+            We assumed that, the force we used to move the coin up is equal to the force we 
+            used to get the coin rotating.
+        </p>
+        <p>
+            We designate the earlier
+            \[F_T\]
+        </p>
+        <p>
+            And the latter
+            \[F_R\]
+        </p>
+        <p>
+            Further analysis, \(F_T\) has to be \(2mgR\) which arises from the integral of \(mg\) 
+            as the coin goes up and dowm so we integrate over \(-g\) and \(g\)
+        </p>
+        <p>
+            We also have \(F_R\) to be \[\frac{4I\theta}{R^2t^2}\] 
+        </p>
+        <p>
+            Combining both with the moment of inertia of the coin, which is 
+            \[I = \frac{mR^2}{4}\] 
+        </p>
+        <p>
+            We obtain \[\theta = \frac{2gt^2}{R}\] 
+        </p>
+        <p>
+            Anyways He exist in a space. Whether this space can be created is a problem 
+            but i have an interesting answer.
+        </p>
+        <p>
+            Which makes time the only controllable thing here.
+        </p>
+        <p>
+            We can plug this in our function to get the equation 
+            \[\Gamma = cos \bigg(\frac{2gt^2}{R}\bigg)\]
+            
+        </p>
+        <p>
+            Which is for the outcome of the coin.
+        </p>
+        <p>
+            So if we obtain
+            \[
+            \Gamma = \begin{cases}
+            1, heads \\
+            0, sides \\
+            -1, tails
+            \end{cases}
+            
+            \]
+        </p>
+        <h3>
+            Non perfect lands
+        </h3>
+        <p>
+            But the question is what if it doesn't land exactly on heads but tilts a bit. Here we 
+            assume no bounces. If we assume no bounces, if the coin lands, it will topple over 
+            and land on the other side outside the point of contact to the side of the tilt never 
+            away from there because that's where the center of mass of the coin lies.
+        </p>
+        <p>
+            So still the same. The coin will land on the side which is facing up at the point of 
+            contact so we can generalize out conditions that, if we obtain an even number, 
+            heads and odd number tails and a number 0 or very close, sides.
+        </p>
+        <h3>
+            Conclusion
+        </h3>
+        <p>
+            The outcome of a coin toss can indeed be predicted with certainty if the initial conditions
+            are known with certainty. Given this equation for the outcome of a coin toss, the coin is 
+            destined to land the same way as it begun which makes Diaconnis investigation partially true
+            maybe the other approximately half was due to human error or errors in the measuring apparatus.
+        </p>
+        <h3>
+            References
+        </h3>
+        <p>
+            <ol>
+                <li> Prandana, AR. Coin Toss Modelling, March 2025, retrieved from <a href="https://tomrocksmaths.com/wp-content/uploads/2025/06/coin_toss_modeling-arfian.pdf">Tom Rock Math</a></li>
+                <li> Keller, J. B. The probability of Heads. The American Mathematics Monthly 93.3 (1986): 191-197.</li>
+                <li> Diaconnis et al. Dynamical Bias in the coin toss. SIAM review 49.2 (2007): 211-235.</li>
+
+            </ol>
+        </p>
+        <h5>
+           
+            <a href="mailto:oseifek@gmail.com">
+            Discusisions may be through Email adress
+            </a>
+        </h5>
+    </div>
+    <footer>
+        <div class="copyright">
+        <p>
+            &copy; 2025 Francis Osei.
+        </p>
+        </div>
+        <div class="social">
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="mailto:oseifek@gmail.com">
+                        <img src="envelope.svg" class="icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/francx_osei">
+                        <img src="instagram.svg" alt="Insta" class="icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/francis-osei-39505a344/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BUpIbaoJPQaqKWU7qnMYGwA%3D%3D">
+                        <img src="linkedin.svg" alt="linkedin" class="icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.researchgate.net/profile/Francis_Osei6?ev=hdr_xprf">
+                        <img src="icons8-researchgate.svg" alt="research" class="icon">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="Postal">
+            <p>
+                Mr Francis Ekow Osei <br>
+                Mfantsipim School<br>
+                P. O. Box 101<br>
+                Ghana <br>
+                Cape Coast<br>
+            </p>
+
+        </div>
+    </footer>
+</body>
+<style>
+    body {
+        margin: 0px;
+        font-family: Inter, sans-serif;
+        align-items: center;
+    }
+    header {
+        background: white;
+        text-align: center;
+        padding: 00px;
+        font-size: 33px;
+        font-weight: bold;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        width: 100%;
+        height: 75px;
+        z-index: 1000;
+        box-shadow: 0 0px 1px rgb(0, 0, 0);
+    }
+    .box{
+        width: 240px;
+        height: 240px;
+        position:relative;
+        overflow: hidden;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    .box img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        position: relative;
+    }
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 300px;
+    }
+    .profilepicture {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 170px;
+    }
+    .caption {
+        text-align: center;
+        font-size: 40px;
+        color: #333;
+        margin-top: 5px;
+    }
+    .Essay h5 {
+        text-decoration: none;
+        text-align: center;
+    }
+    .caption hr {
+        border: none;
+        height: 2px;
+        background-color: rgb(223, 219, 219);
+        width: 70vw;
+        margin: 10px 0 30px 0; /*top right bottom left */
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    hr {
+        border: none;
+        height: 1px;
+        background-color: rgb(93, 93, 93);
+        width: 100vw;
+        margin: 20px 0 30px 0; /*top right bottom left */
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    footer {
+        background-color: rgb(246, 245, 245);
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 14px;
+        margin-top: 40px;
+    }
+    .social img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .social ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .social li img:hover {
+        position: relative;
+        transform: scale(1.1); /* or 1.2 for more zoom */
+        filter: brightness(1.1); /* optional highlight */
+    }
+    .copyright p {
+        text-align: center;
+    }
+    .Postal p {
+        text-align: center;
+    }
+    .Essay {
+        width: 77%;
+        max-width: 800px;         /* Keeps it readable on large screens */
+        margin: 0 auto;           /* Centers it horizontally */
+        padding: 40px;
+        background-color: white;
+        line-height: 1.6;
+    }
+    h3 {
+        text-align: left;
+    }
+    p {
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+    @media (max-width: 1024px) {
+    .Essay {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    @media (max-width: 600px) {
+    .Essay {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+</style>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+</html>
