@@ -1,204 +1,140 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Francis Osei</title>
-    <link rel="icon" href="atom (1).png" type="image/png">
-    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Francis Osei</title>
+  <link rel="icon" href="atom (1).png" type="image/png" />
+  <link href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, sans-serif;
+    }
+
+    header {
+      background: white;
+      text-align: center;
+      font-size: 33px;
+      font-weight: bold;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 1px rgb(0, 0, 0);
+      z-index: 1000;
+    }
+
+    /* Spacer to push content below fixed header */
+    .spacer {
+      height: 75px; /* same as header height */
+    }
+
+    /* Archive section */
+    .archive {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .archive-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .archive-title {
+      font-size: 24px;
+      margin: 0 0 10px;
+      color: #111;
+    }
+
+    .archive-title a {
+      text-decoration: none;
+      color: inherit; /* Keep the same color as the h2 */
+    }
+
+    .archive-title a:hover {
+      text-decoration: underline; /* Optional: add underline on hover */
+    }
+
+    .archive-excerpt {
+      margin: 0;
+      color: #555;
+    }
+
+    footer {
+      background-color: rgb(246, 245, 245);
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 14px;
+      margin-top: 280px;
+    }
+
+    .social img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .social ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social li img:hover {
+      transform: scale(1.1);
+      filter: brightness(1.1);
+    }
+
+    .Postal p {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        Francis Osei
-    </header>
-    <div class="subjects">
-        <ul class="subjectlist">
-            <li class="subjectitem">
-                <div class="caption"><b>No Works yet</b></div>
-                <div class="Announcement">
-                    <p>
-                        We share our update on this website here
-                    </p>
-                </div>
-                </div>
-            </li>
-            <hr>
-        </ul>
+  <header>Francis Osei</header>
+
+  <!-- Spacer div to push below header -->
+  <div class="spacer"></div>
+
+  <!-- Archive cards -->
+  <div class="archive">
+    <div class="archive-item">
+      <h2 class="archive-title">
+        <a href="Coin.html">Can the outcome of a coin toss be predicted with certainty?</a>
+      </h2>
+      <p class="archive-excerpt">A discussion that analysis and predicts coin toss outcomes</p>
     </div>
-    <footer>
-        <div class="copyright">
-        <p>
-            &copy; 2025 Francis Osei.
-        </p>
-        </div>
-        <div class="social">
-            <nav class="navbar">
-                <ul>
-                    <li>
-                        <a href="mailto:oseifek@gmail.com">
-                        <img src="envelope.svg" class="icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com/francx_osei">
-                        <img src="instagram.svg" alt="Insta" class="icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/francis-osei-39505a344/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BUpIbaoJPQaqKWU7qnMYGwA%3D%3D">
-                        <img src="linkedin.svg" alt="linkedin" class="icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.researchgate.net/profile/Francis_Osei6?ev=hdr_xprf">
-                        <img src="icons8-researchgate.svg" alt="research" class="icon">
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="Postal">
-            <p>
-                Mr Francis Ekow Osei <br>
-                Mfantsipim School<br>
-                P. O. Box 101<br>
-                Ghana <br>
-                Cape Coast<br>
-            </p>
-        </div>
-    </footer>
+  </div>
+
+  <footer>
+    <div class="copyright">
+      <p>&copy; 2025 Francis Osei.</p>
+    </div>
+    <div class="social">
+      <nav class="navbar">
+        <ul>
+          <li><a href="mailto:oseifek@gmail.com"><img src="envelope.svg" class="icon" /></a></li>
+          <li><a href="https://instagram.com/francx_osei"><img src="instagram.svg" alt="Insta" class="icon" /></a></li>
+          <li><a href="https://www.linkedin.com/in/francis-osei-39505a344/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BUpIbaoJPQaqKWU7qnMYGwA%3D%3D"><img src="linkedin.svg" alt="LinkedIn" class="icon" /></a></li>
+          <li><a href="https://www.researchgate.net/profile/Francis_Osei6?ev=hdr_xprf"><img src="icons8-researchgate.svg" alt="ResearchGate" class="icon" /></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="Postal">
+      <p>Mr Francis Ekow Osei <br>Mfantsipim School<br>P. O. Box 101<br>Ghana<br>Cape Coast</p>
+    </div>
+  </footer>
 </body>
-<style>
-    body {
-        margin: 0px;
-        font-family: Inter, sans-serif;
-        align-items: center;
-
-    }
-    header {
-        background: white;
-        text-align: center;
-        padding: 00px;
-        font-size: 33px;
-        font-weight: bold;
-        position: fixed;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        top: 0;
-        width: 100%;
-        height: 75px;
-        z-index: 1000;
-        box-shadow: 0 0px 1px rgb(0, 0, 0);
-    }
-    .subjects {
-        margin: 150px auto 0 auto;  /* Center vertically under header */
-        display: flex;
-        justify-content: center;
-    }
-    .subjectlist {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;                  /* Vertical spacing between subject items */
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        max-width: 700px;           /* Control total width of the list */
-    }
-    .subjectitem {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;        /* Center vertically */
-        gap: 30px;                  /* Space between text and image */
-        padding: 10px 0;
-        width: 82%;
-    }
-    .box{
-        width: 170px;
-        height: 100px;
-        position:relative;
-        overflow: hidden;
-        border-radius: 8px;
-        flex-shrink: 0;
-    }
-    .box img {
-        width: 100%;
-        height: 100%;
-        display: block;
-        object-fit: cover;
-        position: relative;
-    }
-    .caption {
-        max-width: 5000px;
-        text-align: left;
-        font-size: 23px;
-        line-height: 1.3;
-        overflow: hidden;
-        color: #333;
-        flex: 1;
-        margin-top: -80px;
-        transform: translateX(38%);
-    }
-    .Announcement {
-        transform: translate(-62%);
-    }
-    hr {
-        border: none;
-        height: 1px;
-        background-color: rgb(93, 93, 93);
-        width: 70%;
-        margin: 0.7px 0 0.7px 0; /*top right bottom left */
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    footer {
-        background-color: rgb(246, 245, 245);
-        text-align: center;
-        padding: 20px 10px;
-        font-size: 14px;
-        margin-top: 270px;
-    }
-    .social img {
-        width: 40px;
-        height: 40px;
-        object-fit: cover;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-    .social ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-    .social li img:hover {
-        position: relative;
-        transform: scale(1.1); /* or 1.2 for more zoom */
-        filter: brightness(1.1); /* optional highlight */
-    }
-    .copyright p {
-        text-align: center;
-    }
-    .Postal p {
-        text-align: center;
-    }
-    @media (max-width: 1024px) {
-    .Essay {
-        margin-left: 60px;
-        margin-right: 60px;
-    }
-    @media (max-width: 600px) {
-    .Essay {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-}
-
-</style>
 </html>
